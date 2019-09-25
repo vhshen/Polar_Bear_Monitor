@@ -1,0 +1,19 @@
+# Data files #
+################
+*.jpg
+*.jpeg
+*.png
+*.mov
+*.avi
+*.MOV
+*.mp4
+*.txt
+
+# Weights files #
+#################
+*.weights
+
+# Other git repos #
+AB_darknet/
+darknet/
+megadetector/CameraTraps/
