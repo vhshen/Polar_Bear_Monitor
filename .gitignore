@@ -12,6 +12,7 @@
 # Weights files #
 #################
 *.weights
+*.backup
 
 # Other git repos #
 AB_darknet/
