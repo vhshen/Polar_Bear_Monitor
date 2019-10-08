@@ -1,6 +1,7 @@
 # Data files #
 ################
 *.jpg
+*.JPG
 *.jpeg
 *.png
 *.mov
