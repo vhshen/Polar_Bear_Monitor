@@ -9,13 +9,10 @@
 *.MOV
 *.mp4
 *.txt
+*.csv
 
 # Weights files #
 #################
 *.weights
 *.backup
 
-# Other git repos #
-AB_darknet/
-darknet/
-megadetector/CameraTraps/
