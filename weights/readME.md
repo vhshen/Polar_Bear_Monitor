@@ -1,8 +1,17 @@
-Iterations:
+## This folder contains all the yolov3 weights files trained on darknet.
+#### The actual weights files themselves can be found on cheetah@cheetahchin, or on Ian's SD card.
 
-    1. unclean_openimages: scraped openimages then trained on original darknet branch. No modifications.
-    2. clean_openimages: deleted the toy/non-polar bear images from openimages pictures. Added negative images from the VOC dataset, and also added images of snow/snowmen.
-    3. AB_openimages_pb: trained on Cheetah Chin with the AlexeyAB branch. Trained with the same data as the previous iteration (all real polar bear images + negatives). All backup weights files still on cheetahchin
-    4. AB_probably_openimages_pb: can't figure out where this weights file comes from. High mAP though...
-    5. megalabels: megan's data, labelled with the megadetector with a threshold of 92%. no manual labelling, sent directly to train with the negative VOC images.
-    6. manlabels: megan's data, labelled with the megadetector at the default threshold (80%) and then gone through manually to check the labels. also traine with negative VOC images.
+Abbreviation Definitions:
+
+	* oi = data came from [open images](https://storage.googleapis.com/openimages/web/index.html) and then put through megadetector
+	* ss = data came from [snapshot serengeti](https://www.zooniverse.org/projects/zooniverse/snapshot-serengeti) and then put through megadetector
+	* nonAB = the weights file was NOT trained on the AlexeyAB branch (default: most of them were trained w/ AlexeyAB)
+	* manlabels (also DEFAULT for oi/ss files) = the openimages files were put through megadetector (80% threshold) and then I manually went through them to delete the incorrect labels
+	* megalabels = the openimages files were put through megadetector (92% threshold) and then immediately went through training (no manual inspection)
+
+Notes:
+	* all the weights were trained with NEGATIVE images (from the Pascal VOC dataset), 1:1 ratio with positives.
+	* when training with openimages data, went through data beforehand and deleted all non-real pictures (i.e. polar bear toys, etc.)
+	* the polar bear weights without oi label were trained using data from Megan only
+	* the "extras" folder contains the iterations from training on okapitongue. delete-able/redundant files, mostly.
+
