@@ -1,0 +1,6 @@
+classes= 1
+train  = data/train.txt
+valid  = data/sbtest.txt
+names = data/sb.names
+backup = backup
+

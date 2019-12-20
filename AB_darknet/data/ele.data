@@ -1,0 +1,6 @@
+classes= 1
+train  = data/train.txt
+valid  = data/eletest.txt
+names = data/ele.names
+backup = backup
+

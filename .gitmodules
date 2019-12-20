@@ -4,9 +4,6 @@
 [submodule "OI_scraper"]
 	path = OI_scraper
 	url = https://github.com/EscVM/OIDv4_ToolKit.git
-[submodule "AB_darknet"]
-	path = AB_darknet
-	url = https://github.com/AlexeyAB/darknet
 [submodule "darknet"]
 	path = darknet
 	url = https://github.com/pjreddie/darknet
